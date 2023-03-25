@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Website</title>
+    <script>
+        function saveTable() {
+            var tableInputs = document.getElementsByClassName("table-input");
+            var tableData = [];
+            for (var i = 0; i < tableInputs.length; i++) {
+                tableData.push(tableInputs[i].value);
+            }
+            // save the data to the browser's local storage
+            localStorage.setItem("tableData", JSON.stringify(tableData));
+        }
+
+        function loadData() {
+            // retrieve the data from the browser's local storage
+            var tableData = JSON.parse(localStorage.getItem("tableData"));
+            if (tableData) {
+                var tableInputs = document.getElementsByClassName("table-input");
+                for (var i = 0; i < tableInputs.length; i++) {
+                    tableInputs[i].value = tableData[i];
+                }
+            }
+        }
+ 
+    </script>
+    <script>
+        function clearTable() {
+            var tableInputs = document.getElementsByClassName("table-input");
+            for (var i = 0; i < tableInputs.length; i++) {
+                tableInputs[i].value = "";
+            }
+            localStorage.removeItem("tableData");
+        }
+    </script>
+    
+    <style>
+    
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="loadData()">
+
+<table class="tablee">
+    <tbody>
+          <tr>
+            <td><input type="text" class="table-input" data-key="input1"></td>
+            <td><input type="text" class="table-input" data-key="input2"></td>
+            <td><input type="text" class="table-input" data-key="input3"></td>
+            <td><input type="text" class="table-input" data-key="input4"></td>
+            <td><input type="text" class="table-input"></td>
+            <td><input type="text" class="table-input"></td>
+            <td><input type="text" class="table-input"></td>
+            <td><input type="text" class="table-input"></td>
+            </tr>
+          <tr>
+            <td><input type="text" class="table-input"></td>
+            <td><input type="text" class="table-input"></td>
+            <td><input type="text" class="table-input"></td>
+            <td><input type="text" class="table-input"></td>
+            <td><input type="text" class="table-input"></td>
+            <td><input type="text" class="table-input"></td>
+            <td><input type="text" class="table-input"></td>
+            <td><input type="text" class="table-input"></td>
+            </tr>
+          <tr>
+            <td><input type="text" class="table-input"></td>
+            <td><input type="text" class="table-input"></td>
+            <td><input type="text" class="table-input"></td>
+            <td><input type="text" class="table-input"></td>
+            <td><input type="text" class="table-input"></td>
+            <td><input type="text" class="table-input"></td>
+            <td><input type="text" class="table-input"></td>
+            <td><input type="text" class="table-input"></td>
+            </tr>
+          <tr>
+            
+            <td><input type="text" class="table-input"></td>
+            <td><input type="text" class="table-input"></td>
+            <td><input type="text" class="table-input"></td>
+            <td><input type="text" class="table-input"></td>
+            <td><input type="text" class="table-input"></td>
+            <td><input type="text" class="table-input"></td>
+            <td><input type="text" class="table-input"></td>
+            <td><input type="text" class="table-input"></td>
+            </tr>
+          <tr>
+            
+            <td><input type="text" class="table-input"></td>
+            <td><input type="text" class="table-input"></td>
+            <td><input type="text" class="table-input"></td>
+            <td><input type="text" class="table-input"></td>
+            <td><input type="text" class="table-input"></td>
+            <td><input type="text" class="table-input"></td>
+            <td><input type="text" class="table-input"></td>
+            <td><input type="text" class="table-input"></td>
+            </tr>
+          <tr>
+            
+            <td><input type="text" class="table-input"></td>
+            <td><input type="text" class="table-input"></td>
+            <td><input type="text" class="table-input"></td>
+            <td><input type="text" class="table-input"></td>
+            <td><input type="text" class="table-input"></td>
+            <td><input type="text" class="table-input"></td>
+            <td><input type="text" class="table-input"></td>
+            <td><input type="text" class="table-input"></td>
+            </tr>
+          <tr>
+            
+            <td><input type="text" class="table-input"></td>
+            <td><input type="text" class="table-input"></td>
+            <td><input type="text" class="table-input"></td>
+            <td><input type="text" class="table-input"></td>
+            <td><input type="text" class="table-input"></td>
+            <td><input type="text" class="table-input"></td>
+            <td><input type="text" class="table-input"></td>
+            <td><input type="text" class="table-input"></td>
+            </tr>
+          <tr>
+           
+            <td><input type="text" class="table-input"></td>
+            <td><input type="text" class="table-input"></td>
+            <td><input type="text" class="table-input"></td>
+            <td><input type="text" class="table-input"></td>
+            <td><input type="text" class="table-input"></td>
+            <td><input type="text" class="table-input"></td>
+            <td><input type="text" class="table-input"></td>
+            <td><input type="text" class="table-input"></td>
+            </tr>
+          <tr>
+            
+            <td><input type="text" class="table-input"></td>
+            <td><input type="text" class="table-input"></td>
+            <td><input type="text" class="table-input"></td>
+            <td><input type="text" class="table-input"></td>
+            <td><input type="text" class="table-input"></td>
+            <td><input type="text" class="table-input"></td>
+            <td><input type="text" class="table-input"></td>
+            <td><input type="text" class="table-input"></td>
+            </tr>
+          <tr>
+            
+            <td><input type="text" class="table-input"></td>
+            <td><input type="text" class="table-input"></td>
+            <td><input type="text" class="table-input"></td>
+            <td><input type="text" class="table-input"></td>
+            <td><input type="text" class="table-input"></td>
+            <td><input type="text" class="table-input"></td>
+            <td><input type="text" class="table-input"></td>
+            <td><input type="text" class="table-input"></td>
+            </tr>
+          <tr>
+            
+            <td><input type="text" class="table-input"></td>
+            <td><input type="text" class="table-input"></td>
+            <td><input type="text" class="table-input"></td>
+            <td><input type="text" class="table-input"></td>
+            <td><input type="text" class="table-input"></td>
+            <td><input type="text" class="table-input"></td>
+            <td><input type="text" class="table-input"></td>
+            <td><input type="text" class="table-input"></td>
+            </tr>
+          <tr>
+            
+            <td><input type="text" class="table-input"></td>
+            <td><input type="text" class="table-input"></td>
+            <td><input type="text" class="table-input"></td>
+            <td><input type="text" class="table-input"></td>
+            <td><input type="text" class="table-input"></td>
+            <td><input type="text" class="table-input"></td>
+            <td><input type="text" class="table-input"></td>
+            <td><input type="text" class="table-input"></td>
+            </tr>
+          <tr>
+            
+            <td><input type="text" class="table-input"></td>
+            <td><input type="text" class="table-input"></td>
+            <td><input type="text" class="table-input"></td>
+            <td><input type="text" class="table-input"></td>
+            <td><input type="text" class="table-input"></td>
+            <td><input type="text" class="table-input"></td>
+            <td><input type="text" class="table-input"></td>
+            <td><input type="text" class="table-input"></td>
+            </tr>
+          <tr>
+            
+            <td><input type="text" class="table-input"></td>
+            <td><input type="text" class="table-input"></td>
+            <td><input type="text" class="table-input"></td>
+            <td><input type="text" class="table-input"></td>
+            <td><input type="text" class="table-input"></td>
+            <td><input type="text" class="table-input"></td>
+            <td><input type="text" class="table-input"></td>
+            <td><input type="text" class="table-input"></td>
+            </tr>
+          <tr>
+            
+            <td><input type="text" class="table-input"></td>
+            <td><input type="text" class="table-input"></td>
+            <td><input type="text" class="table-input"></td>
+            <td><input type="text" class="table-input"></td>
+            <td><input type="text" class="table-input"></td>
+            <td><input type="text" class="table-input"></td>
+            <td><input type="text" class="table-input"></td>
+            <td><input type="text" class="table-input"></td>
+            </tr>
+          <tr>
+            
+            <td><input type="text" class="table-input"></td>
+            <td><input type="text" class="table-input"></td>
+            <td><input type="text" class="table-input"></td>
+            <td><input type="text" class="table-input"></td>
+            <td><input type="text" class="table-input"></td>
+            <td><input type="text" class="table-input"></td>
+            <td><input type="text" class="table-input"></td>
+            <td><input type="text" class="table-input"></td>
+            </tr>
+          <tr>
+            
+            <td><input type="text" class="table-input"></td>
+            <td><input type="text" class="table-input"></td>
+            <td><input type="text" class="table-input"></td>
+            <td><input type="text" class="table-input"></td>
+            <td><input type="text" class="table-input"></td>
+            <td><input type="text" class="table-input"></td>
+            <td><input type="text" class="table-input"></td>
+            <td><input type="text" class="table-input"></td>
+            </tr>
+          <tr>
+            
+            <td><input type="text" class="table-input"></td>
+            <td><input type="text" class="table-input"></td>
+            <td><input type="text" class="table-input"></td>
+            <td><input type="text" class="table-input"></td>
+            <td><input type="text" class="table-input"></td>
+            <td><input type="text" class="table-input"></td>
+            <td><input type="text" class="table-input"></td>
+            <td><input type="text" class="table-input"></td>
+            </tr>
+          <tr>
+            
+            <td><input type="text" class="table-input"></td>
+            <td><input type="text" class="table-input"></td>
+            <td><input type="text" class="table-input"></td>
+            <td><input type="text" class="table-input"></td>
+            <td><input type="text" class="table-input"></td>
+            <td><input type="text" class="table-input"></td>
+            <td><input type="text" class="table-input"></td>
+            <td><input type="text" class="table-input"></td>
+            </tr>
+          <tr>
+
+    </tbody>
+</table>
+<br>
+<input type="submit" value="Save" onclick="saveTable()" class="Save">
+<button onclick="clearTable()" class="clear">Clear Table</button>
+
+
+
+</body>
+</html>
